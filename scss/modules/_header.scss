@@ -1,0 +1,74 @@
+.header {
+    background: url(../images/header_bg.jpg) top center no-repeat;
+    background-size: cover;
+    text-align: center;
+    &__title {
+        font: 700 48px $main-font;
+        text-transform: uppercase;
+        margin-top: 260px;
+        letter-spacing: 3px;
+    }
+    &__subtitle {
+        font: 400 22px $main-font;
+        letter-spacing: 3px;
+        margin: 15px 0 52px;
+    }
+    &-form {
+        width: 57%;
+        border: 2px solid $white;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        
+    &__field {
+        line-height: 60px;
+        width: 77%;
+        font-size: 14px;
+        color: #999;
+        text-align: center;
+        &:hover {
+            background: $lightgrey;
+        }
+        &:hover::placeholder {
+            color: $blue;
+        }
+        }
+        &__btn {
+            text-align: right;
+            width: 23%;
+            background: $blue;
+            line-height: 60px;
+            font-family: Aleo;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: $white; 
+            &:hover {
+                background: $darkblue;
+            }
+            }
+            
+        
+        &__icon {
+            float: right;
+            font-size: 25px;
+            line-height: 60px;
+            padding: 0 15px;
+    
+        }
+    }
+    &__scroll {
+        margin: 120px 0 140px;
+        font: 400 14px $main-font;
+        letter-spacing: 2px;
+        &-link {
+            @include pos($l: 50%, $b: 120px);
+            transform: translateX(-50%);
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}
+    
+

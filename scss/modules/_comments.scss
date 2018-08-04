@@ -1,0 +1,26 @@
+.comments {
+    background: url(../images/comment-bg.jpg) no-repeat;
+     background-size: cover;
+    &__title {
+        font: 400 36px Aleo, serif;
+        margin: 115px 0 95px;
+        text-align: center;  
+    } 
+    &__wrapper {
+       display: flex;
+        flex-direction: row;
+        background: #333;
+        margin-bottom: 200px;
+    }
+    &__text {
+        width: 60%;
+        padding: 36px 55px;
+    }
+    &__author {
+        font: 400 20px $main-font, serif;
+        color: $lightgrey;
+        text-transform: uppercase;
+        margin-bottom: 33px;
+    }
+  
+}

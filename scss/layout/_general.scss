@@ -1,0 +1,82 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html {
+	height: 100%;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+@include font-face (Aleo, "font/Aleo/aleo-regular-webfont"); 
+body {
+    padding: 15px;
+    color: $white;
+}
+a {
+    text-decoration: none;
+    color: $white;
+}
+.container {
+    width: 1140px;
+}
+.section__title {
+    font: 400 36px Aleo, serif;
+}
+.section__description {
+    font: 400 16px/26px "Josefin Sans", sans-serif;
+    color: #8e8e8e;
+}
+.section__btn {
+    display: block;
+    width: 225px;
+    font: 400 16px/60px Aleo, serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        background: $darkblue;
+    }
+    }
+//travel
+.info-card {
+    margin-top: 220px;
+    margin-bottom: 90px;
+    background: rgba(35,35,35, 0.9);
+    padding: 52px 32px;
+}
+.info-card__country, .info-card__city {
+    font: 400 20px/26px "Josefin Sans", sans-serif;
+    color: $lightgrey;
+    margin-bottom: 25px;
+}
+.info-card__city {
+    text-transform: uppercase;
+}
+.section__btn--travel {
+    margin-top: 48px;
+    background: $blue;
+}

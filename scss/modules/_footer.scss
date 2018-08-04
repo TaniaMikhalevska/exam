@@ -1,0 +1,28 @@
+.footer {
+    background: #232323;
+     text-align: center;
+    &__title {
+        margin-top: 116px;
+        font: 700 24px/26px $main-font;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__description {
+        margin-bottom: 25px;
+        color: $white;
+    }
+    &-social__items{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 52px;
+    }
+    &-social__icon {
+        font-size: 18px;
+        padding: 0 10px;
+        &:hover {
+            color: $blue;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.header-nav {
+   background: $blue;
+    &-col {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__items {
+        display: flex;
+        flex-direction: row;
+    }
+    &__item {
+       padding: 0 20px;
+        &:hover {
+            background: $darkblue;
+        }
+    }
+    &__link {
+        font: 400 14px/80px Aleo;
+    }
+    
+}
+.logo {
+    font: 700 24px/80px $main-font;
+    text-transform: uppercase;
+    &:hover {
+       text-shadow: 2px 0 2px $darkblue;
+    }
+}

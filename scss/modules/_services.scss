@@ -1,0 +1,32 @@
+.services {
+    background: #333;
+    &__items {
+    background-size: contain;
+        margin: 100px 70px 114px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__link {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    &__icon {
+        font-size: 58px;
+        margin-bottom: 30px;
+        &--red {
+            color: #fe6363;
+        }
+         &--blue {
+            color: #00a2ff;
+        }
+         &--violet {
+            color: #5474fd;
+        }
+    }
+    &__name {
+        font: 400 36px Aleo;
+        color: $lightgrey;
+    }
+}
